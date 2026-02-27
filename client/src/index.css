@@ -1,0 +1,36 @@
+/**
+ * Global styles — strict black-and-white terminal aesthetic.
+ * No gradients, no shadows, no border-radius, monospace everywhere.
+ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+/**
+ * Flash overlay keyframe — fades from a subtle white wash to transparent.
+ * Duration controlled inline via animation-duration.
+ */
+@keyframes flash-fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}

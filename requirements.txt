@@ -1,0 +1,6 @@
+# System Requirements
+Node.js >= 18
+xdotool
+LibreOffice Impress
+
+# Node packages are managed via npm (see server/package.json and client/package.json)
